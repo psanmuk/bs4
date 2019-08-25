@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">  -->
+
+    <title>Hello, world!</title>
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   -->
+    <style>
+        .sellprice {
+            text-align: center;
+            font-family: tahoma;
+            font-size: 20px;
+
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="card card-body bg-light my-1">
+        <h3 class="card-title">
+            <strong>บัตร&#160;Exclusive2559</strong>
+        </h3>
+        <div class="row">
+            <div class="col-4">105901</div>
+            <div class="col-4 font-weight-bolder bg-primary sellprice">4,560.00</div>
+            <div class="col-4">
+                <form action="/Cart/AddToCart" method="post">
+                    <input id="STKCOD" name="STKCOD" type="hidden" value="105901" />
+                    <input id="returnUrl" name="returnUrl" type="hidden" value="/" />
+                    <input type="submit" class="btn btn-success" value="เลือกซื้อ" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-body">
+        <div class="card-block">
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-text">This text will be written on a grey background inside a Card.</p>
+            <a href="#" class="btn btn-primary">This is a Button</a>
+        </div>
+    </div>
+
+    <div class="card card-body bg-light">
+        <h4>
+            <strong>บัตร&#160;Exclusive2559</strong>
+        </h4>
+
+        <div class="row">
+            <div class="col-4">105902</div>
+            <div class="col-4 font-weight-bold text-primary sellprice">4,560.02</div>
+            <div class="col-4 float-right">
+                <form action="/Cart/AddToCart" method="post">
+                    <input id="STKCOD" name="STKCOD" type="hidden" value="105901" />
+                    <input id="returnUrl" name="returnUrl" type="hidden" value="/" />
+                    <input type="submit" class="btn btn-success" value="เลือกซื้อ" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-body bg-light">
+        <h4>
+            <strong>บัตร&#160;Exclusive2559</strong>
+        </h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">105903</div>
+                <div class="col-4 font-weight-bold text-primary sellprice ">4,560.03</div>
+                <div class="col-4 float-right">
+                    <form action="/Cart/AddToCart" method="post">
+                        <input id="STKCOD" name="STKCOD" type="hidden" value="105901" />
+                        <input id="returnUrl" name="returnUrl" type="hidden" value="/" />
+                        <input type="submit" class="btn btn-success" value="เลือกซื้อ" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-body bg-light">
+            <h4 class="card-title">
+                <strong>บัตร&#160;Exclusive2559</strong>
+            </h4>
+            <div class="row">
+                <div class="col-4">105901</div>
+                <div class="col-4 font-weight-bold bg-warning text-secondary sellprice">4,560.04</div>
+                <div class="col-4">
+                    <form action="/Cart/AddToCart" method="post">
+                        <input id="STKCOD" name="STKCOD" type="hidden" value="105901" />
+                        <input id="returnUrl" name="returnUrl" type="hidden" value="/" />
+                        <input type="submit" class="btn btn-success" value="เลือกซื้อ" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card card-body bg-light">
+                <h4 class="card-title">
+                    <strong>บัตร&#160;Exclusive2559</strong>
+                </h4>
+                <div class="row">
+                    <div class="col-4">105901</div>
+                    <div class="col-4 bg-warning sellprice">4,560.04</div>
+                    <div class="col-4">
+                        <form action="/Cart/AddToCart" method="post">
+                            <input id="STKCOD" name="STKCOD" type="hidden" value="105901" />
+                            <input id="returnUrl" name="returnUrl" type="hidden" value="/" />
+                            <input type="submit" class="btn btn-success" value="เลือกซื้อ" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+    <hr>
+
+
+
+    <!--   Bootstrap 3.x.x
+        <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#1">Menu-1</a></li>
+                            <li><a href="#2">Menu-2</a></li>
+                            <li><a href="#3">Menu-3</a></li>
+                        </ul>
+                        <a href="#4">Menu-4</a>
+                    </div>
+                </div>
+            </div>
+-->
+    <!--
+<li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-envelope-o">
+            <span class="badge badge-danger">11</span>
+          </i>
+          Link
+        </a>
+      </li>
+
+<i style='font-size:24px' class='fas'>&#xf015;</i>
+<i class='fas fa-home' style='font-size:24px'></i>
+-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+        <a class="navbar-brand" href="#">xCarWash</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-envelope-o"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"><i class='fas fa-home' style='font-size:24px'>Link</i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item disabled" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link fas fa-history " href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+
+    <table>
+        <tbody id="the-list" data-wp-lists="list:tag">
+            <tr id="tag-7" class="alternate">
+                <td class="rowYYYYMM">201901</td>
+                <td class="rowQtySale">40,000</td>
+                <td class="posts column-posts"><a href="edit.php?tshowcase-categories=ops&amp;post_type=tshowcase"
+                        class="btSelect">11111111</a>
+                    &nbsp;<a href="\TbPeriods\Detail?id=2017" class="btDetail">222222222222222222</a>
+                </td>
+            </tr>
+            <tr id="tag-8" class="alternate">
+                <td class="rowYYYYMM">201902</td>
+                <td class="rowQtySale">40,002</td>
+                <td class="posts column-posts"><a href="edit.php?tshowcase-categories=ops&amp;post_type=tshowcase"
+                        class="btSelect">11111111</a>
+                    &nbsp;<a href="\TbPeriods\Detail?id=2018" class="btDetail">222222222222222222</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="d">
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    </p>
+    <p id="s">
+        YYYYYYYYYYYYYYYYYYYY
+    </p>
+
+    <tabl>
+        <tr>
+            <td>
+                <a href="https://www.w3schools.com">w3schools.com</a><br>
+                <a href="http://www.google.com">Google.com</a><br>
+                <a href="http://www.wikipedia.org">wikipedia.org</a>
+            </td>
+        </tr>
+    </tabl>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("a[href$='.org']").css("background-color", "yellow");
+            $("a[href*='Detail']").css("foreground-color", "blue");
+            $("a[title*='Detail']").css("background-color", "red");
+            $("#tag-7 td.rowYYYYMM").text("256201");
+            $("#tag-7 td.rowQtySale").text("12,340");
+
+            var d = $("#tag-7 td.column-posts").find("a[href*='Detail']").attr("href", "QQQQQQQQQQQQQQQ");
+            var s = $("#tag-7 td.column-posts").find("a").attr("href");
+
+            console.log("d=" + d);
+            console.log("s=" + s);
+            $("#d").val("background-color");
+            $("#s").text("Result = " + s);
+            $("#d").text("Result = " + d);
+            $("a[href$='.org']").text("background-color");
+        });
+    </script>
+</body>
+
+</html>
