@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>รายการขาย-ประจำวัน</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+
+        .net-amt {
+
+            background: orange;
+            font-size: 1.5rem;
+            /* margin-bottom: 0.5rem; */
+
+            font-family: ‘Oswald’, Tahoma;
+            font-weight: 500;
+            line-height: 1.5;
+            color: white;
+        }
+
+        .pstrn-item {
+            font-style: normal;
+            font-size: 0.875em;
+            /* 14px/16=0.875em */
+        }
+    </style>
+</head>
+
+
+
+<div class="container body-content">
+    <link href="/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+    <style>
+    </style>
+
+    <div class="row col-6">รายการขาย-ประจำวัน</div>
+    <div class="row col-6"></div>
+
+
+    <nav class="navbar navbar-expand bg-dark navbar-dark">
+        <div class="collapse navbar-collapse" id="navx">
+            <ul class="navbar-nav mr-auto">   <!-- mr-auto ทำให้ Form ชิดขวา -->
+                <li class="nav-item">
+                    <a class="btn btn-warning" role="button" href="#">ออกบิลขาย</a>
+                </li>
+            </ul>
+            <form action="/" class="form-inline my-0 ">
+                <input class="form-control mr-2" type="text" placeholder="วันที่ขาย">
+                <button class="btn btn-success my-2 my-sm-0" type="button"><i class="fa fa-fw fa-search"></i>ค้นหา</button>
+            </form>
+
+            <!-- <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="วันที่ขาย">
+            <button class="btn btn-success" type="submit"><i class="fa fa-fw fa-search"></i>ค้นหา</button>
+        </form> -->
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
+        <a class="navbar-brand" href="javascript:void(0)">ออกบิลขาย</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+    <hr>
+
+
+    <table class="table table-condensed">
+        <tr>
+            <td class="col-2">
+                <div class="btn btn-danger"><a href="/PSTRNs/Create">ออกบิลขาย</a></div>
+            </td>
+            <td class="col-10">
+                <form action="/" class="form-horizontal" method="get">
+                    <table class="table table-condensed">
+                        <tr>
+                            <td>วันที่:</td>
+                            <td><input id="SearchTRNDAT" name="SearchTRNDAT" type="text" value="20180122" /></td>
+                            <td><button type="submit" class="btn btn-primary">ค้นหา</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <div class"row col-12">จำนวน 10 รายการ</div>
+    <table class="table table-striped">
+        <tr>
+            <th class="col-*">เลขบิล</th>
+            <th class="col-*">ลูกค้า</th>
+            <th class="col-*">ยอดเงิน</th>
+            <th class="col-*">เงินสด</th>
+            <th class="col-*">บัตร</th>
+            <th class="col-*"></th>
+        </tr>
+
+        <tr class="pstrn-item text-primary">
+            <td>
+                9000000012
+            </td>
+            <td>
+                90000003
+            </td>
+            <td>
+                0.00
+            </td>
+            <td>
+                0.00
+            </td>
+            <td>
+                0.00
+            </td>
+
+            <td>
+
+                <a href="/PSTRNs/Details/9000000012">View</a>
+
+            </td>
+        </tr>
+        <tr class="pstrn-item text-primary">
+            <td>
+                9000000013
+            </td>
+            <td>
+                90000005
+            </td>
+            <td>
+                6160.00
+            </td>
+            <td>
+                6160.00
+            </td>
+            <td>
+                0.00
+            </td>
+
+            <td>
+
+                <a href="/PSTRNs/Details/9000000013">View</a> |
+
+            </td>
+        </tr>
+        <tr class="pstrn-item text-primary">
+            <td>
+                9000000014
+            </td>
+            <td>
+                90000002
+            </td>
+            <td>
+                10240.00
+            </td>
+            <td>
+                10240.00
+            </td>
+            <td>
+                0.00
+            </td>
+
+            <td>
+
+                <a href="/PSTRNs/Details/9000000014">View</a> |
+
+            </td>
+        </tr>
+        <tr class="pstrn-item text-primary">
+            <td>
+                9000000015
+            </td>
+            <td>
+                90000002
+            </td>
+            <td>
+                6000.00
+            </td>
+            <td>
+                6000.00
+            </td>
+            <td>
+                0.00
+            </td>
+
+            <td>
+
+                <a href="/PSTRNs/Details/9000000015">View</a> |
+
+            </td>
+        </tr>
+        <tr class="pstrn-item text-primary">
+            <td>
+                9000000016
+            </td>
+            <td>
+                90000002
+            </td>
+            <td>
+                10240.00
+            </td>
+            <td>
+                10240.00
+            </td>
+            <td>
+                0.00
+            </td>
+
+            <td>
+
+                <a href="/PSTRNs/Details/9000000016">V</a>
+
+            </td>
+        </tr>
+        <tr class="pstrn-item text-primary">
+            <td>
+                9000000017
+            </td>
+            <td>
+                90000002
+            </td>
+            <td>
+                6000.00
+            </td>
+            <td>
+                6000.00
+            </td>
+            <td>
+                0.00
+            </td>
+
+            <td>
+
+                <a href="/PSTRNs/Details/9000000017">View</a>
+
+            </td>
+        </tr>
+
+
+    </table>
+    หน้าที่ 1 / 2
+
+    <div class="pagination-container">
+        <ul class="pagination">
+            <li class="active"><a>1</a></li>
+            <li><a href="/?page=2">2</a></li>
+            <li class="PagedList-skipToNext"><a href="/?page=2" rel="next">»</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <hr />
+    <footer>
+        <p>&copy; 2019 - XCarWash V.1908-22</p>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
